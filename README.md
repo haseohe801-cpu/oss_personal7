@@ -1,3 +1,6 @@
+선택한 프로젝트_
+react-todo-app
+
 선택이유_
 수업중 실습을 통해 익힌 내용이라 익숙했고, 처음 react 를 배우는데에 있어 간단한 프로젝트를 분석하고 이해하는 것이 도움이 될 것이라 판단해 이 프로젝트를 선택하였다.
 
@@ -12,7 +15,7 @@ App.jsx	ToDoList 컴포넌트를 불러와 전체 화면을 구성
 index.css	배경, 색상, 글꼴, 버튼, Todo 목록 디자인을 담당
 
 React Component: 주요 컴포넌트 1~2개의 역할_
-ToDoList.jsx: 할 일 목록을 관리하는 주요 컴포넌트임. 할 일 추가, 완료, 삭제 및 저장 기능을 담당함
+ToDoList.jsx: 할 일 목록을 관리하는 주요 컴포넌트. 할 일 추가, 완료, 삭제 및 저장 기능을 담당함
 ToDoForm.jsx: 사용자가 할 일을 입력하고 추가하거나 전체 삭제할 수 있도록 하는 컴포넌트임
 
 Code Analysis: 코드 1개(약 5~15줄)를 선택하여 동작 원리 설명_
@@ -39,19 +42,21 @@ ToDoList.jsx_
 기존 제목을 My Daily Planner로 변경
 새로운 안내 문구를 추가
 
-2. style_background: linear-gradient(90deg, #e03ce0 0%, #8932db 100%); ->
-background: linear-gradient(90deg, #dbeafe 0%, #93c5fd 100%);
+2. style_background_
+index.css_
+linear-gradient(90deg, #e03ce0 0%, #8932db 100%); ->
+background: linear-gradient(90deg, #dbeafe 0%, #dd0853 100%);
 
 background: #e750a3; -> background: #ffffff;
 
 border: solid #000 10px; -> border: solid #2563eb 3px; border-radius: 15px;
 
-기존 h1 부분에 다음 내용을 추가_color: #1e3a8a;
+기존 h1 부분에 내용 추가_color: #1e3a8a;
 <h1 style={{ color: '#1e3a8a' }}>My Daily Planner</h1>
 
-CSS 맨 아래에 추가_
+CSS 아래에 추가_
 .subtitle {
-  color: #64748b;
+  color: #d20404;
   font-size: 14px;
   margin-bottom: 20px;
 }
@@ -64,11 +69,26 @@ placeholder="What do you need to do today?"
 Text	ToDoList.jsx	제목이 My Daily Planner로 변경됨
 Text	ToDoForm.jsx	입력 안내 문구 What do you need to do today? 로 변경됨
 Style	index.css	배경과 Todo 박스 색이 변경됨
-UI	ToDoList.jsx	안내 문구 디자인이 추가됨
+UI	ToDoList.jsx	안내 문구 디자인이 변경됨
 
 
 
+weekly review_
+새롭게 배운 내용 3가지_
+Component를 기능별로 나누어 웹사이트를 구성하는 방법을 알게 되었다.
+useState를 사용하여 할 일 목록을 관리하고 화면을 업데이트하는 방법을 배웠다.
+localStorage를 사용하여 새로고침을 눌러도 일 목록이 유지되도록 하는 방법을 배웠다.
 
+어려웠던 점과 해결 방법_
+처음 배우는 것이다 보니, React 프로젝트의 구조와 각 파일의 역할을 이해하는 것이 조금 헷갈렸다.
+특히 컴포넌트끼리 데이터를 전달하고 연결하는 부분이 헷갈렸다.
+각 파일의 코드를 하나씩 확인하고 AI한테 코드를 뜯어 설명해 달라하며 해결했다.
+
+AI 활용 내용 및 느낀 점_
+AI를 활용하여 기존 코드의 구조와 각 컴포넌트의 역할을 파악했다.(코드를 주며 쉬운 설명 요구)
+수정하는 것은 구조가 이해되면 간단하므로 AI의 도움을 받지 않았다.
+AI를 통해 낯선 React 코드를 더 쉽게 이해할 수 있었고, 혼자서 공부하는 것보다 훨씬
+빠른 속도로 구조를 이해할 수 있어 좋았다.
 
 
 
